@@ -38,7 +38,7 @@ Ensure you have at least 500GB of free space if you're setting --max-disk 500.
 
 
 
-**Configuration (ADD YOUR SOLANA PUBLIC ADDRESS)**
+**Configuration (ADD YOUR SOLANA PUBLIC ADDRESS, CONFIGURE BASED ON YOUR OPERATING SYSTEM SPECS)**
 
 	     ./pop \
   		--ram 8 \
