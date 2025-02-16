@@ -21,38 +21,37 @@ DevNet 2 serves as an alpha testnet, and after maintaining stability for 40 days
 
 **Run the following command to verify available storage:**
 
-df -h
+	df -h
 
 Ensure you have at least 500GB of free space if you're setting --max-disk 500.
-	
+		
 
 **INSTALL (Copy each prompt one after the other)**
 
 
-curl -L -o pop "https://dl.pipecdn.app/v0.2.5/pop"
+	curl -L -o pop "https://dl.pipecdn.app/v0.2.5/pop"
 
-chmod +x pop
+	chmod +x pop
 
-mkdir download_cache
+	mkdir download_cache
 
 
 
 
 **Configuration (ADD YOUR SOLANA PUBLIC ADDRESS)**
 
-
-./pop \
-  --ram 8 \
-  --max-disk 500 \
-  --cache-dir /data \
-  --pubKey "public key"
+	     ./pop \
+  		--ram 8 \
+  		--max-disk 500 \
+		--cache-dir /data \
+ 		--pubKey "public key"
 	
 
 
 
 **Add Ref**
 
-./pop --signup-by-referral-route 39c3bfb0765b7dff
+	./pop --signup-by-referral-route 39c3bfb0765b7dff
 
 
 
@@ -60,8 +59,10 @@ mkdir download_cache
 **Monitor**
 
 View metrics
-./pop --status
+
+	./pop --status
 
 Check points
-./pop --points
+
+	./pop --points
 
