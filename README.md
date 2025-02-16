@@ -1,7 +1,7 @@
 **Pipe PoP Cache Node Documentation**
 
 
-*GUIDE FOR PIPE NODE DEPLYMENT*
+**GUIDE FOR PIPE NODE DEPLYMENT**
 
 
 As we prepare for the testnet launch, we're introducing a new node architecture. 
@@ -19,7 +19,7 @@ DevNet 2 serves as an alpha testnet, and after maintaining stability for 40 days
 
 **Check Your Disk Space:**
 
-Run the following command to verify available storage:
+**Run the following command to verify available storage:**
 
 df -h
 
@@ -45,7 +45,7 @@ mkdir download_cache
   --ram 8 \
   --max-disk 500 \
   --cache-dir /data \
-  --pubKey <public key>
+  --pubKey "public key"
 	
 
 
