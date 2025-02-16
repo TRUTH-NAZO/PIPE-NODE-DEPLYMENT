@@ -47,6 +47,7 @@ Ensure you have at least 500GB of free space if you're setting --max-disk 500.
  		--pubKey "public key"
 	
 
+**Create new terminal and continue**
 
 
 **Add Ref**
