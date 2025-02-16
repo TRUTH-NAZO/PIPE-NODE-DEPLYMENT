@@ -45,6 +45,14 @@ Ensure you have at least 500GB of free space if you're setting --max-disk 500.
   		--max-disk 500 \
 		--cache-dir /data \
  		--pubKey "public key"
+   		Restart=always
+		RestartSec=5
+		LimitNOFILE=65536
+		LimitNPROC=4096
+		StandardOutput=journal
+		StandardError=journal
+		SyslogIdentifier=pop-node
+		WorkingDirectory=/var/lib/pop
 	
 
 **Create new terminal and continue**
