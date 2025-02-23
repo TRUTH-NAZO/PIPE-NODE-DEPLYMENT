@@ -26,12 +26,20 @@ DevNet 2 serves as an alpha testnet, and after maintaining stability for 40 days
 	df -h
 
 Ensure you have at least 500GB of free space if you're setting --max-disk 500.
+
+# Create new screen
+
+	sudo apt install git -y
+
+	sudo apt install screen
+
+	screen -S pipe
 		
 
 # INSTALL (Copy each prompt one after the other)
 
 
-	curl -L -o pop "https://dl.pipecdn.app/v0.2.5/pop"
+	curl -L -o pop "https://dl.pipecdn.app/v0.2.8/pop"
 
 	chmod +x pop
 
@@ -47,6 +55,7 @@ Ensure you have at least 500GB of free space if you're setting --max-disk 500.
   		--max-disk 500 \
 		--cache-dir /data \
  		--pubKey "public key"
+ 	        --enable-80-443
    		Restart=always
 		RestartSec=5
 		LimitNOFILE=65536
@@ -56,13 +65,19 @@ Ensure you have at least 500GB of free space if you're setting --max-disk 500.
 		SyslogIdentifier=pop-node
 		WorkingDirectory=/var/lib/pop
 	
+# Exist Screen use ( ctrl AD) simultaneously
 
 # Create new terminal and continue
 
 
 # Add Ref
 
-	./pop --signup-by-referral-route 39c3bfb0765b7dff
+	./pop --signup-by-referral-route 91636a9cd3a3608a
+# Generate your Ref
+	./pop --gen-referral-route
+ 
+# Use referral
+	./pop --signup-by-referral-route <CODE>
 
 # Monitor
 
